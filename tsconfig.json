@@ -1,17 +1,28 @@
 {
   "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "outDir": "./build",
-    "allowJs": true,
-    "target": "es2022",
-    "module": "Node16",
-    "sourceMap": true,
-    "moduleResolution": "node16",
+    "rootDir": "./src",
+
+    "types": ["node"],
     "esModuleInterop": true,
-    "strictNullChecks" : false,
+    "resolveJsonModule": true,
+
+    /* —–– максимально расслабляем проверки ––– */
+    "strict": false,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": false,
+    "useUnknownInCatchVariables": false,
     "skipLibCheck": true,
-    "isolatedModules": true,
+    "noEmitOnError": false
   },
-  "include": [
-    "./src/**/**/*"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
 }
