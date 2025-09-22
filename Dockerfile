@@ -40,4 +40,4 @@ COPY --from=builder /bot/build /bot/build
 ENV NODE_ENV=production
 
 # Run the application
-CMD ["npm", "run", "prod", "--prefix", "/bot"]
+CMD ["npm", "run", "start", "--prefix", "/bot"]
