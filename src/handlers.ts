@@ -16,16 +16,16 @@ export function registerCommonHandlers(addon: any, keys?: any) {
   addon.command('clear', (ctx: any) => commands.clearCommand(ctx));
 
   addon.command('id', (ctx: any) =>
-    middleware.reply(ctx, `User ID: ${ctx.from.id}\nGroup ID: ${ctx.chat.id}`, {
+    middleware.reply(ctx, `ID пользователя: ${ctx.from.id}\nID группы: ${ctx.chat.id}`, {
       parse_mode: cache.config.parse_mode,
     })
   );
 
-  addon.command('faq', (ctx: any) =>
-    middleware.reply(ctx, cache.config.language.faqCommandText, {
-      parse_mode: cache.config.parse_mode,
-    })
-  );
+  // addon.command('faq', (ctx: any) =>
+  //   middleware.reply(ctx, cache.config.language.faqCommandText, {
+  //     parse_mode: cache.config.parse_mode,
+  //   })
+  // );
 
   addon.command('help', (ctx: any) => commands.helpCommand(ctx));
 

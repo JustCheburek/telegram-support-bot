@@ -39,7 +39,7 @@ const clearCommand = (ctx: Context): void => {
   cache.ticketIDs.length = 0;
   cache.ticketStatus.length = 0;
   cache.ticketSent.length = 0;
-  middleware.reply(ctx, 'All tickets closed.');
+  middleware.reply(ctx, 'Все тикеты закрыты.');
 };
 
 /**

@@ -2,7 +2,6 @@ import cache from './cache';
 import * as middleware from './middleware';
 import * as db from './db';
 import { Context } from './interfaces';
-import { ISupportee } from './db';
 import * as log from 'fancy-log'
 
 /**
