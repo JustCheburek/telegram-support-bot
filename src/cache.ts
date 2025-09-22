@@ -19,7 +19,7 @@ const cache: Cache = {
 
 // 1) читаем YAML (необязательно существующий)
 let yamlConfig: Partial<Config> = {};
-const raw = fs.readFileSync("./config/config.yaml", "utf8");
+const raw = fs.readFileSync("./config.yml", "utf8");
 yamlConfig = YAML.parse(raw) ?? {};
 
 // mongodb_uri; bot_token; staffchat_id; owner_id
