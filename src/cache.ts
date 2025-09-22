@@ -1,6 +1,7 @@
 import { Cache, Config } from "./interfaces";
 import * as YAML from "yaml";
 import * as fs from "fs";
+import 'dotenv/config';
 
 const cache: Cache = {
   userId: "",
@@ -26,15 +27,21 @@ cache.config = {
   ...yamlConfig,
 
   mongodb_uri:
-    process.env.MONGODB_URI?.trim() || (yamlConfig as any)?.mongodb_uri || "",
+    process.env.MONGODB_URI?.trim() || "",
 
   bot_token:
-    process.env.BOT_TOKEN?.trim() || (yamlConfig as any)?.bot_token || "",
+    process.env.BOT_TOKEN?.trim() || "",
 
   staffchat_id:
-    process.env.STAFFCHAT_ID?.trim() || (yamlConfig as any)?.staffchat_id || "",
+    process.env.STAFFCHAT_ID?.trim() || "",
 
-  owner_id: process.env.OWNER_ID?.trim() || (yamlConfig as any)?.owner_id || "",
+  owner_id: process.env.OWNER_ID?.trim() || "",
 } as Config;
+
+console.log("Using config:", cache.config);
+console.log(process.env.MONGODB_URI);
+console.log(process.env.BOT_TOKEN);
+console.log(process.env.STAFFCHAT_ID);
+console.log(process.env.OWNER_ID);
 
 export default cache;
