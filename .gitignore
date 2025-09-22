@@ -1,6 +1,5 @@
 # Config file
 config.ts
-config.yaml
 support.db
 support.old.db
 build/
@@ -68,4 +67,3 @@ typings/
 test/testing.js
 test/support.test.js
 config/support.db.old
-config/config.yaml
