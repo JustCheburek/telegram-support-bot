@@ -38,10 +38,4 @@ cache.config = {
   owner_id: process.env.OWNER_ID?.trim() || "",
 } as Config;
 
-console.log("Using config:", cache.config);
-console.log(process.env.MONGODB_URI);
-console.log(process.env.BOT_TOKEN);
-console.log(process.env.STAFFCHAT_ID);
-console.log(process.env.OWNER_ID);
-
 export default cache;
