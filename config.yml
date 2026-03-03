@@ -78,11 +78,11 @@ language:
   textFirst: "Пожалуйста, отправьте нам сообщение перед отправкой изображения, чтобы мы могли лучше вам помочь."
   ticketClosedError: "Вы не можете отвечать на закрытый тикет."
   automatedReply: "Это автоматический ответ."
-  automatedReplyAuthor: "MineBridge."
+  automatedReplyAuthor: "Макс Спид VPN."
   doesntHelp: "Это не помогает."
   automatedReplySent: "Автоматический ответ был отправлен пользователю."
   ticketReopened: "Тикет был повторно открыт."
-  regardsGroup: "MineBridge"
+  regardsGroup: "Макс Спид VPN"
 
 autoreply:
   # - question: "install"
